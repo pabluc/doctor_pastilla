@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Medicine:</strong>
+  <%= @notification.medicine %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @notification.email %>
+</p>
+
+<p>
+  <strong>Cadence:</strong>
+  <%= @notification.cadence %>
+</p>
+
+<%= link_to 'Edit', edit_notification_path(@notification) %> |
+<%= link_to 'Back', notifications_path %>
