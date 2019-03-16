@@ -4,6 +4,6 @@ class SendConfigOkJob < ApplicationJob
   def perform(*args)
   	notification = Notification.find(args[0][:id])
 
-    ConfigMailer.config_email(notification).deliver
+    ConfigMailer.config_email(notification).deliver_now
   end
 end
