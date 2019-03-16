@@ -6,7 +6,28 @@
   <body>
     <h1>Hola</h1>
     <p>
-       Su medicación fue programada
+       Su medicación fue programada:
     </p>
+    
+    <p>
+      <strong>Medicine:</strong>
+      <%= @notification.medicine %>
+    </p>
+
+    <p>
+      <strong>Email:</strong>
+      <%= @notification.email %>
+    </p>
+
+    <p>
+      <strong>Cadence minutes:</strong>
+      <%= @notification.cadence_minutes %>
+    </p>
+
+    <p>
+      <strong>Start:</strong>
+      <%= @notification.start %>
+    </p>
+
   </body>
 </html>
