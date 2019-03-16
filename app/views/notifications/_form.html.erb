@@ -22,8 +22,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :cadence %>
-    <%= form.number_field :cadence %>
+    <%= form.label :cadence_minutes %>
+    <%= form.number_field :cadence_minutes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start %>
+    <%= form.datetime_select :start %>
   </div>
 
   <div class="actions">

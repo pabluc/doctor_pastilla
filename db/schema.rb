@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_16_171322) do
+ActiveRecord::Schema.define(version: 2019_03_16_192433) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,7 +18,8 @@ ActiveRecord::Schema.define(version: 2019_03_16_171322) do
   create_table "notifications", force: :cascade do |t|
     t.string "medicine"
     t.string "email"
-    t.integer "cadence"
+    t.integer "cadence_minutes"
+    t.datetime "start"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

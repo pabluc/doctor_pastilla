@@ -3,7 +3,8 @@ class CreateNotifications < ActiveRecord::Migration[5.2]
     create_table :notifications do |t|
       t.string :medicine
       t.string :email
-      t.integer :cadence
+      t.integer :cadence_minutes
+      t.datetime :start
 
       t.timestamps
     end

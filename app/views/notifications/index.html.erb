@@ -7,7 +7,8 @@
     <tr>
       <th>Medicine</th>
       <th>Email</th>
-      <th>Cadence</th>
+      <th>Cadence minutes</th>
+      <th>Start</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,7 +18,8 @@
       <tr>
         <td><%= notification.medicine %></td>
         <td><%= notification.email %></td>
-        <td><%= notification.cadence %></td>
+        <td><%= notification.cadence_minutes %></td>
+        <td><%= notification.start %></td>
         <td><%= link_to 'Show', notification %></td>
         <td><%= link_to 'Edit', edit_notification_path(notification) %></td>
         <td><%= link_to 'Destroy', notification, method: :delete, data: { confirm: 'Are you sure?' } %></td>

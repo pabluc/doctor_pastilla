@@ -11,8 +11,13 @@
 </p>
 
 <p>
-  <strong>Cadence:</strong>
-  <%= @notification.cadence %>
+  <strong>Cadence minutes:</strong>
+  <%= @notification.cadence_minutes %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @notification.start %>
 </p>
 
 <%= link_to 'Edit', edit_notification_path(@notification) %> |

@@ -17,7 +17,7 @@ class NotificationsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create notification" do
     assert_difference('Notification.count') do
-      post notifications_url, params: { notification: { cadence: @notification.cadence, email: @notification.email, medicine: @notification.medicine } }
+      post notifications_url, params: { notification: { cadence_minutes: @notification.cadence_minutes, email: @notification.email, medicine: @notification.medicine, start: @notification.start } }
     end
 
     assert_redirected_to notification_url(Notification.last)
@@ -34,7 +34,7 @@ class NotificationsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update notification" do
-    patch notification_url(@notification), params: { notification: { cadence: @notification.cadence, email: @notification.email, medicine: @notification.medicine } }
+    patch notification_url(@notification), params: { notification: { cadence_minutes: @notification.cadence_minutes, email: @notification.email, medicine: @notification.medicine, start: @notification.start } }
     assert_redirected_to notification_url(@notification)
   end
 

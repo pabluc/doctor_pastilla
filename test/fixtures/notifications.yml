@@ -3,9 +3,11 @@
 one:
   medicine: MyString
   email: MyString
-  cadence: 1
+  cadence_minutes: 1
+  start: 2019-03-16 16:24:33
 
 two:
   medicine: MyString
   email: MyString
-  cadence: 1
+  cadence_minutes: 1
+  start: 2019-03-16 16:24:33

@@ -69,6 +69,6 @@ class NotificationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def notification_params
-      params.require(:notification).permit(:medicine, :email, :cadence)
+      params.require(:notification).permit(:medicine, :email, :cadence_minutes, :start)
     end
 end

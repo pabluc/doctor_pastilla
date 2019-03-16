@@ -14,9 +14,10 @@ class NotificationsTest < ApplicationSystemTestCase
     visit notifications_url
     click_on "New Notification"
 
-    fill_in "Cadence", with: @notification.cadence
+    fill_in "Cadence minutes", with: @notification.cadence_minutes
     fill_in "Email", with: @notification.email
     fill_in "Medicine", with: @notification.medicine
+    fill_in "Start", with: @notification.start
     click_on "Create Notification"
 
     assert_text "Notification was successfully created"
@@ -27,9 +28,10 @@ class NotificationsTest < ApplicationSystemTestCase
     visit notifications_url
     click_on "Edit", match: :first
 
-    fill_in "Cadence", with: @notification.cadence
+    fill_in "Cadence minutes", with: @notification.cadence_minutes
     fill_in "Email", with: @notification.email
     fill_in "Medicine", with: @notification.medicine
+    fill_in "Start", with: @notification.start
     click_on "Update Notification"
 
     assert_text "Notification was successfully updated"
