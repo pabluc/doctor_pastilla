@@ -28,7 +28,7 @@
 
   <div class="field">
     <%= form.label :start %>
-    <%= form.datetime_select :start %>
+    <%= form.datetime_select :start, default: Time.now %>
   </div>
 
   <div class="actions">

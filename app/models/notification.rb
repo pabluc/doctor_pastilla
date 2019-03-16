@@ -7,6 +7,10 @@ class Notification < ApplicationRecord
   end
 
   def create_job_reminder
-    SendNotificationJob.set(wait_until: self.start).perform_later({id: self.id})
+    if self.start.past?
+      SendNotificationJob.perform_later({id: self.id})
+    else
+      SendNotificationJob.set(wait_until: self.start).perform_later({id: self.id})
+    end
   end
 end

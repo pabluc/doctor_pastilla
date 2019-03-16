@@ -4,6 +4,6 @@ class ConfigMailer < ApplicationMailer
   def config_email(notification)
     @notification = notification
 
-    mail(to: @notification.email, subject: "Notificación programada")
+    mail(to: @notification.email, subject: "PastillAlert - Notificación programada")
   end
 end

@@ -4,6 +4,6 @@ class ReminderMailer < ApplicationMailer
   def reminder_email(notification)
     @notification = notification
 
-    mail(to: @notification.email, subject: "Recordatorio #{Time.now}")
+    mail(to: @notification.email, subject: "PastillAlert - Recordatorio #{Time.now}")
   end
 end
