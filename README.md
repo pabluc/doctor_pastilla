@@ -13,9 +13,9 @@
 
 Link a la aplicación: https://pastillalert.herokuapp.com
 
-Funcionamiento basico:
+Funcionamiento basico para validar la solución:
 
-Para validar la solucion se da de alta una notificacion. La notificacion contiene los siguientes datos basicos:
+Se da de alta un recordatorio de Medicación. La misma contiene los siguientes datos basicos:
 - Medicamento
 - Email al cual llegan las notificaciones
 - Cadencia en minutos
@@ -23,7 +23,7 @@ Para validar la solucion se da de alta una notificacion. La notificacion contien
 
 ```
 El software envia un email de confirmación de modicación programada.
-Luego el software envia el recordatorio en cada intervalo de tiempo. 
+Luego se envia el recordatorio en cada intervalo de tiempo. 
 (Nota: Por cada notificación vuelve a programar una nueva notificación. De forma recursiva.)
 Por ultimo para dejar de recibir el recordatorio se debe borrar dicha programación.
 ```
