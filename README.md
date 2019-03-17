@@ -15,7 +15,7 @@ Link a la aplicación: https://pastillalert.herokuapp.com
 
 Funcionamiento basico para validar la solución:
 
-Se da de alta un recordatorio de Medicación. La misma contiene los siguientes datos basicos:
+Se da de alta un recordatorio de Medicación. El mismo contiene los siguientes datos basicos:
 - Medicamento
 - Email al cual llegan las notificaciones
 - Cadencia en minutos
