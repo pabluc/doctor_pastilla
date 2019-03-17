@@ -1,4 +1,4 @@
-# README
+# README - PastillAlert
 
 # Taller de innovación
 
